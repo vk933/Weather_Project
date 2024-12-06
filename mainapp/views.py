@@ -18,7 +18,7 @@ def index(request):
         city=request.POST.get('city').lower()
         print(city)
 
-        if API_KEY == 'ae137d0e01d9485989271932240612':
+        if API_KEY == '':
             print('Please add your generated API key into the "API_KEY" variable within the views.py')
             return render(request,'index.html',{'checker':'Please add your generated API key into the "API_KEY" variable within the views.py'})
 
